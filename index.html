@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oven Story - Fresh Pizzas & More</title>
+    <meta name="description" content="Discover Oven Story: Authentic pizzas, fresh ingredients, and delicious food delivered to your door. Order now for the best dining experience.">
+    <meta name="keywords" content="pizza, food delivery, Oven Story, fresh ingredients, online ordering">
+    <link rel="icon" href="logo.png"> <!-- Placeholder for business logo -->
+    <style>
+        /* Clean, modern, food-focused CSS with brand colors (assuming red and white for Oven Story) */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #d32f2f; /* Brand red */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #b71c1c; /* Darker red */
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #d32f2f;
+        }
+        .hero {
+            background-image: url('hero-pizza.jpg'); /* Placeholder for high-quality food imagery */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .cta-button {
+            background-color: #d32f2f;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 0.5rem;
+            font-weight: bold;
+        }
+        .cta-button:hover {
+            background-color: #b71c1c;
+        }
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .about, .menu, .gallery, .contact {
+            margin-bottom: 4rem;
+        }
+        .about h2, .menu h2, .gallery h2, .contact h2 {
+            text-align: center;
+            color: #d32f2f;
+            margin-bottom: 2rem;
+        }
+        .menu-categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .menu-category {
+            width: 45%;
+            margin-bottom: 2rem;
+        }
+        .menu-item {
+            background: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .menu-item h3 {
+            margin: 0;
+            color: #d32f2f;
+        }
+        .menu-item p {
+            margin: 0.5rem 0;
+        }
+        .menu-item .price {
+            font-weight: bold;
+            color: #b71c1c;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #d32f2f;
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #b71c1c;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .contact-info a {
+            color: #d32f2f;
+            text-decoration: none;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .social-links a {
+            margin: 0 0.5rem;
+            color: #d32f2f;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .menu-category {
+                width: 100%;
+            }
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Oven Story Logo" style="height: 50px;"> <!-- Placeholder for logo -->
+        <h1>Oven Story</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Fresh Pizzas Baked to Perfection</h1>
+            <p>At Oven Story, we use the finest ingredients to create mouth-watering pizzas and more. Order now and taste the difference!</p>
+            <a href="#menu" class="cta-button">View Menu</a>
+            <a href="#contact" class="cta-button">Order Now</a>
+            <a href="#contact" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Oven Story</h2>
+        <p>Oven Story is your go-to destination for authentic, wood-fired pizzas made with fresh, high-quality ingredients. Our unique selling points include customizable toppings, fast delivery, and a commitment to sustainability. Founded with a passion for great food, we're here to bring joy to your table.</p>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-categories">
+            <div class="menu-category">
+                <h3>Pizzas</h3>
+                <div class="menu-item">
+                    <h3>Margherita</h3>
+                    <p>Fresh tomato sauce, mozzarella, basil.</p>
+                    <span class="price">$12.99</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Pepperoni</h3>
+                    <p>Tomato sauce, mozzarella, pepperoni.</p>
+                    <span class="price">$14.99</span>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h3>Sides</h3>
+                <div class="menu-item">
+                    <h3>Garlic Bread</h3>
+                    <p>Buttery garlic bread with herbs.</p>
+                    <span class="price">$5.99</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Salad</h3>
+                    <p>Fresh mixed greens with vinaigrette.</p>
+                    <span class="price">$7.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="pizza1.jpg" alt="Delicious Pizza">
+            <img src="interior1.jpg" alt="Cozy Interior">
+            <img src="pizza2.jpg" alt="Fresh Ingredients">
+            <img src="interior2.jpg" alt="Dining Area">
+            <img src="pizza3.jpg" alt="Wood-Fired Oven">
+            <img src="interior3.jpg" alt="Team at Work">
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="/submit" method="post"> <!-- Placeholder action; integrate with backend -->
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="tel" name="phone" placeholder="Your Phone" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>Call us: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Business Hours: Mon-Sun 11am-11pm</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153168!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d4a9c8a388b3!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1633072800000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> <!-- Placeholder Google Maps embed; replace with actual location -->
+            <div class="social-links">
+                <a href="https://facebook.com/ovenstory">Facebook</a>
+                <a href="https://instagram.com/ovenstory">Instagram</a>
+                <a href="https://twitter.com/ovenstory">Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Oven Story. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple JS for mobile menu toggle if needed, but nav is already responsive
+        // For form submission, integrate with a backend like Node.js or PHP
+    </script>
+</body>
+</html>
