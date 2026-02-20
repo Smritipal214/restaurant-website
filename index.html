@@ -31,6 +31,7 @@ background:#ffffff;
 box-shadow:0 2px 10px rgba(0,0,0,0.05);
 position:sticky;
 top:0;
+z-index:1000;
 }
 
 header h1{
@@ -90,50 +91,78 @@ margin-top:10px;
 }
 
 section{
-padding:70px 8%;
+padding:80px 8%;
 }
 
 .section-title{
 text-align:center;
 color:#d24787;
 margin-bottom:40px;
+font-size:28px;
 }
 
 .menu-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+align-items:stretch;
 }
 
 .card{
 background:white;
 padding:20px;
-border-radius:12px;
-box-shadow:0 4px 15px rgba(0,0,0,0.05);
+border-radius:15px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
 text-align:center;
-color:#333;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
 }
 
 .card img{
 width:100%;
-border-radius:10px;
+height:260px;
+object-fit:cover;
+border-radius:12px;
 margin-bottom:15px;
+}
+
+.card h3{
+color:#333;
+}
+
+.card p{
+color:#555;
 }
 
 .price{
 color:#d24787;
 font-weight:600;
+margin-top:10px;
 }
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
 .gallery img{
 width:100%;
-border-radius:10px;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+}
+
+.map-section{
+margin-top:60px;
+}
+
+.map-section iframe{
+width:100%;
+height:350px;
+border-radius:15px;
+border:none;
 }
 
 footer{
@@ -173,7 +202,18 @@ font-size:28px;
 
 <section id="about">
 <h2 class="section-title">About Us</h2>
-<p>We craft fresh, delicious baked goods daily using premium ingredients. From custom celebration cakes to everyday treats, we bake moments of joy.</p>
+<p>
+At Sweet Cravings, baking is more than a craft — it's our passion.
+Every morning our ovens come alive with the aroma of freshly baked breads,
+decadent cakes, buttery croissants, and handcrafted desserts.
+<br><br>
+We use only premium ingredients and traditional techniques combined with
+modern creativity to deliver flavors that feel both nostalgic and exciting.
+Whether it's a birthday celebration, a wedding, or simply a sweet craving after dinner,
+we believe every bite should create a memory.
+<br><br>
+Our commitment is simple — freshness, quality, and happiness in every box.
+</p>
 </section>
 
 <section id="menu">
@@ -220,6 +260,12 @@ font-size:28px;
 <h2 class="section-title">Contact Us</h2>
 <p>📞 <a href="tel:9876543210" style="color:#d24787;">9876543210</a></p>
 <p>📍 Your Bakery Location</p>
+
+<div class="map-section">
+<h2 class="section-title">Find Us</h2>
+<iframe src="https://www.google.com/maps?q=Jaipur&output=embed"></iframe>
+</div>
+
 </section>
 
 <footer>
