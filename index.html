@@ -10,15 +10,46 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body{background:#fff8f2;color:#333;}
-header{display:flex;justify-content:space-between;align-items:center;padding:15px 8%;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,0.05);position:sticky;top:0;}
-header h1{color:#d2691e;}
-nav a{margin-left:20px;text-decoration:none;color:#333;}
-nav a:hover{color:#d2691e;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#eec4dc;
+color:#d24787;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:#ffffff;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+}
+
+header h1{
+color:#d24787;
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:#d24787;
+font-weight:500;
+}
+
+nav a:hover{
+opacity:0.7;
+}
 
 .hero{
-background:url('images/hero.jpg') center/cover no-repeat;
+background:url('hero.jpg') center/cover no-repeat;
 height:90vh;
 display:flex;
 align-items:center;
@@ -27,42 +58,96 @@ color:white;
 text-align:center;
 position:relative;
 }
+
 .hero::after{
 content:"";
-position:absolute;top:0;left:0;width:100%;height:100%;
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
 background:rgba(0,0,0,0.4);
 }
-.hero-content{position:relative;z-index:2;}
-.hero h2{font-size:42px;margin-bottom:15px;}
-.btn{background:#d2691e;color:white;padding:12px 25px;border-radius:30px;text-decoration:none;display:inline-block;margin-top:10px;}
 
-section{padding:70px 8%;}
-.section-title{text-align:center;color:#d2691e;margin-bottom:40px;}
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero h2{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.btn{
+background:#d24787;
+color:white;
+padding:12px 25px;
+border-radius:30px;
+text-decoration:none;
+display:inline-block;
+margin-top:10px;
+}
+
+section{
+padding:70px 8%;
+}
+
+.section-title{
+text-align:center;
+color:#d24787;
+margin-bottom:40px;
+}
 
 .menu-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
+
 .card{
 background:white;
 padding:20px;
 border-radius:12px;
 box-shadow:0 4px 15px rgba(0,0,0,0.05);
 text-align:center;
+color:#333;
 }
-.card img{width:100%;border-radius:10px;margin-bottom:15px;}
-.price{color:#d2691e;font-weight:600;}
+
+.card img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.price{
+color:#d24787;
+font-weight:600;
+}
 
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:15px;
 }
-.gallery img{width:100%;border-radius:10px;}
 
-footer{background:#222;color:white;text-align:center;padding:20px;}
-@media(max-width:768px){.hero h2{font-size:28px;}}
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+footer{
+background:#d24787;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+.hero h2{
+font-size:28px;
+}
+}
 </style>
 </head>
 
@@ -93,24 +178,25 @@ footer{background:#222;color:white;text-align:center;padding:20px;}
 
 <section id="menu">
 <h2 class="section-title">Our Menu</h2>
+
 <div class="menu-grid">
 
 <div class="card">
-<img src="images/cake.jpg">
+<img src="cake.jpg">
 <h3>Chocolate Truffle Cake</h3>
 <p>Rich chocolate layers with creamy ganache</p>
 <div class="price">₹650</div>
 </div>
 
 <div class="card">
-<img src="images/pastry.jpg">
+<img src="pastry.jpg">
 <h3>Strawberry Pastry</h3>
 <p>Light sponge with fresh strawberries</p>
 <div class="price">₹120</div>
 </div>
 
 <div class="card">
-<img src="images/cupcake.jpg">
+<img src="cupcake.jpg">
 <h3>Vanilla Cupcakes</h3>
 <p>Soft & fluffy cupcakes with buttercream</p>
 <div class="price">₹80</div>
@@ -121,16 +207,18 @@ footer{background:#222;color:white;text-align:center;padding:20px;}
 
 <section id="gallery">
 <h2 class="section-title">Gallery</h2>
+
 <div class="gallery">
-<img src="images/gallery1.jpg">
-<img src="images/gallery2.jpg">
-<img src="images/gallery3.jpg">
+<img src="gallery1.jpg">
+<img src="gallery2.jpg">
+<img src="gallery3.jpg">
 </div>
+
 </section>
 
 <section id="contact">
 <h2 class="section-title">Contact Us</h2>
-<p>📞 <a href="tel:9876543210">9876543210</a></p>
+<p>📞 <a href="tel:9876543210" style="color:#d24787;">9876543210</a></p>
 <p>📍 Your Bakery Location</p>
 </section>
 
